@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
+import toast from "react-hot-toast";
+import { useAuthState } from "react-firebase-hooks/auth";
 import Banner from "../../Pages/Home/Banner/Banner";
 
 const NavBar = () => {
+  const [user] = useAuthState(auth);
   return (
     <div className="drawer drawer-end">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
@@ -60,9 +65,21 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink className="rounded-lg mx-2" to="/signUp">
-                  Register
-                </NavLink>
+                {user ? (
+                  <button
+                    onClick={async () => {
+                      await signOut(auth);
+                      toast.success("sign out successfully");
+                    }}
+                    className="btn btn-primary text-white rounded-lg mx-2"
+                  >
+                    Sign Out
+                  </button>
+                ) : (
+                  <NavLink className="rounded-lg mx-2" to="/signUp">
+                    Register
+                  </NavLink>
+                )}
               </li>
             </ul>
           </div>

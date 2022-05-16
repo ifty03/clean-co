@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Booking from "./Pages/Booking/Booking";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
       </Routes>
       <Footer />
+      <Toaster />
     </div>
   );
 }

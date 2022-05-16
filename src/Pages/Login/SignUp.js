@@ -27,6 +27,7 @@ const SignUp = () => {
   useEffect(() => {
     if (user) {
       navigate(from, { replace: true });
+      toast.success("user already login");
     }
   }, [user, from, navigate]);
 

@@ -1,0 +1,32 @@
+[
+    {
+        "name":"Vacuuming carpets and floors",
+        "price":200,
+        "provider":"jamal khan"
+    },
+    {
+        "name":"Sweeping and mopping floors",
+        "price":205,
+        "provider":"kamal khan"
+    },
+    {
+        "name":"Emptying trash.",
+        "price":300,
+        "provider":"nahid khan"
+    },
+    {
+        "name":"High and low dusting",
+        "price":500,
+        "provider":"tarek khan"
+    },
+    {
+        "name":"Vacuuming High dusting floors",
+        "price":600,
+        "provider":"jabed khan"
+    },
+    {
+        "name":"Changing linen",
+        "price":230,
+        "provider":"tiko khan"
+    }
+]

@@ -3,8 +3,7 @@ import { DayPicker } from "react-day-picker";
 import { format } from "date-fns";
 import "react-day-picker/dist/style.css";
 
-const BookingBanner = () => {
-  const [date, setDate] = useState(new Date());
+const BookingBanner = ({ date, setDate }) => {
   let footer = <p>Please pick a day.</p>;
   if (date) {
     footer = (
