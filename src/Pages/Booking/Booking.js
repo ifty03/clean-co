@@ -7,7 +7,7 @@ const Booking = () => {
   return (
     <div>
       <BookingBanner setDate={setDate} date={date} />
-      <Services />
+      <Services date={date} />
     </div>
   );
 };
