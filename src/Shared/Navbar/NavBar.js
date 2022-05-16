@@ -59,6 +59,11 @@ const NavBar = () => {
                   Book Now
                 </NavLink>
               </li>
+              <li>
+                <NavLink className="rounded-lg mx-2" to="/signUp">
+                  Register
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
