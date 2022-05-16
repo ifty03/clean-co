@@ -8,7 +8,7 @@ const NavBar = () => {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* <!-- Navbar --> */}
-        <div className="w-full navbar lg:px-[80px] h-[74px]">
+        <div className="w-full navbar lg:px-[80px] ">
           <div className="flex-1 px-2 mx-2">Clean co</div>
           <div className="flex-none lg:hidden">
             <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
@@ -53,8 +53,8 @@ const NavBar = () => {
               </li>
               <li>
                 <NavLink
-                  className="rounded-lg mx-2 btn btn-outline btn-primary"
-                  to="/contact"
+                  className="rounded-lg mx-2 text-white btn btn-outline btn-primary"
+                  to="/booking"
                 >
                   Book Now
                 </NavLink>
@@ -82,8 +82,8 @@ const NavBar = () => {
           </li>
           <li>
             <NavLink
-              className="rounded-lg mx-2 btn btn-outline btn-primary"
-              to="/contact"
+              className="rounded-lg text-white mx-2 btn btn-outline btn-primary"
+              to="/booking"
             >
               Book Now
             </NavLink>
